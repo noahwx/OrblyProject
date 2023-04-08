@@ -3,7 +3,7 @@ import Main from './components/Main';
 import Favicon from "react-favicon";
 import logo from './logo.svg';
 
-// Version 0.3.000
+// Version 0.4.000
 
 function App() {
   return (

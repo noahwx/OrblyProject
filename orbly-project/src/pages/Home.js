@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
+import UserPost from '../components/UserPost';
 
 const Home = () => {
     return ( 
@@ -8,9 +9,7 @@ const Home = () => {
             <div className='Home'>
                 <div className='feed'>
                     <h1 className='feed-heading'>Your Feed</h1>
-                    <div className='user-feed-post'>
-                        <textarea className='user-feed-post-text' placeholder='What do you want to talk about?' />
-                    </div>
+                    <UserPost />
                 </div>
             </div>
         </div>

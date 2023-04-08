@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "../components/Header";
 
-const Account = () => {
+const Notifications = () => {
     return ( 
         <div>
             <Header />
-            <h1>Account</h1>
+            <h1>Notifications</h1>
         </div>
      );
 }
  
-export default Account;
+export default Notifications;

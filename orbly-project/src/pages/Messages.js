@@ -1,9 +1,11 @@
 import React from "react";
+import Header from "../components/Header";
 
 const Support = () => {
     return ( 
         <div>
-            <h1>Support</h1>
+            <Header />
+            <h1>Messages</h1>
         </div>
      );
 }
