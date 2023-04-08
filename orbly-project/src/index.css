@@ -1,0 +1,85 @@
+@import url("https://use.typekit.net/fmt6zlo.css");
+
+* {
+  font-family: "articulat-cf", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-color: #0A7CFF;
+  --secondary-color: #288CFF;
+  --tertiary-color: #479DFF;
+  --white: #EBF4FF;
+  --black: #000A14;
+  --error: #FF2929;
+  --success: #29FF7E;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Desktop */
+
+.Nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+
+.NavLogo {
+  width: 5em;
+}
+
+.NavItems {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 600;
+}
+
+.NavItem {
+  padding: 1em;
+  text-decoration: none;
+  color: var(--black);
+  transition: all 200ms ease;
+}
+
+.NavItem.active {
+  color: var(--primary-color);
+}
+
+.NavItem:hover {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+@keyframes firstAnimation {
+  to {
+      stroke-dashoffset: 0;
+  }
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 950px) {
+  body {
+    background-color: var(--secondary-color);
+    color: var(--white);
+  }
+
+  footer {
+    display: none;
+  }
+}

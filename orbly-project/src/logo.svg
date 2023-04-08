@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 2" viewBox="0 0 1086 1086">
+  <defs>
+    <filter id="a" filterUnits="userSpaceOnUse">
+      <feOffset dy="5"/>
+      <feGaussianBlur result="blur" stdDeviation="15"/>
+      <feFlood flood-color="#000" flood-opacity=".25"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="b" filterUnits="userSpaceOnUse">
+      <feOffset dy="5"/>
+      <feGaussianBlur result="blur-2" stdDeviation="15"/>
+      <feFlood flood-color="#000" flood-opacity=".25"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="c" filterUnits="userSpaceOnUse">
+      <feOffset dy="5"/>
+      <feGaussianBlur result="blur-3" stdDeviation="15"/>
+      <feFlood flood-color="#000" flood-opacity=".25"/>
+      <feComposite in2="blur-3" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g data-name="Layer 1">
+    <path d="M598.25 41.02C568.75 37.78 543 60.99 543 90.67v46.34h-.67c-220.91 0-400 179.09-400 400 0 .33 0 .67.01 1H95.66c-29.68 0-52.89 25.75-49.65 55.25 25.5 232 209.73 416.23 441.73 441.73 29.5 3.24 55.25-19.97 55.25-49.65V736.99c-.22.01-.45.01-.67.01-96.36 0-176.81-68.15-195.76-158.88-4.87-23.29-25.16-40.12-48.95-40.12h-.57c-19.97-24.22-29.05-35.23-49.02-59.46C275.22 340.83 396.65 237 542.33 237h.67v55.22c0 23.82 16.87 44.13 40.19 48.97 90.86 18.85 159.14 99.36 159.14 195.82 0 .33 0 .67-.01 1h248.02c29.68 0 52.89-25.75 49.65-55.25-25.5-232-209.73-416.23-441.73-441.73Z" style="fill:#0a7cff;filter:url(#a)"/>
+    <path d="M543 137h-.67c-220.91 0-400 179.09-400 400 0 .33 0 .67.01 1 .53 220.45 179.41 399 399.99 399h.67V736.99c-.22.01-.45.01-.67.01-96.36 0-176.81-68.15-195.76-158.88-4.87-23.29-25.16-40.12-48.95-40.12h-.57c-19.97-24.22-29.05-35.23-49.02-59.46C275.23 340.83 396.66 237 542.34 237h.67v55.22c0 23.82 16.87 44.13 40.19 48.97 90.86 18.85 159.14 99.36 159.14 195.82 0 .33 0 .67-.01 1h146.68l49.43-57.05C911.21 286.8 744.6 137.34 543.01 137.01Z" style="fill:#288cff"/>
+    <path d="M543 736.99V837h-.67c-144.88 0-265.78-102.7-293.85-239.28-6.34-30.86 17.45-59.72 48.96-59.72h.17c23.79 0 44.09 16.83 48.95 40.12C365.52 668.85 445.96 737 542.32 737c.22 0 .45 0 .67-.01Z" style="filter:url(#b);fill:#479dff"/>
+    <path d="M836.64 478.56c-19.97 24.22-29.05 35.23-49.03 59.44h-45.3c.01-.33.01-.67.01-1 0-96.46-68.28-176.96-159.14-195.82-23.32-4.84-40.19-25.15-40.19-48.97v-.18c0-31.5 28.84-55.27 59.7-48.96 117.89 24.08 210.61 117.31 233.94 235.48Z" style="fill:#479dff;filter:url(#c)"/>
+  </g>
+</svg>
