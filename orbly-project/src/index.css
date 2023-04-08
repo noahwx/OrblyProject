@@ -19,6 +19,7 @@
 body {
   background-color: var(--white);
   color: var(--black);
+  overflow: hidden;
 }
 
 footer {
@@ -56,6 +57,31 @@ footer {
   transition: all 200ms ease;
 }
 
+.profile-img {
+  width: 4em;
+  height: 4em;
+  border-radius: 100%;
+  cursor: pointer;
+  border: 2px solid var(--black);
+}
+
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.status-circle-profile {
+  position: absolute;
+  top: 4.5em;
+  right: 9.5em;
+  width: 2em;
+  height: 2em;
+  border-radius: 100%;
+  border: 2px solid var(--white);
+  background-color: var(--success);
+}
+
 .NavItem.active {
   color: var(--primary-color);
 }
@@ -64,12 +90,124 @@ footer {
   border-bottom: 2px solid var(--primary-color);
 }
 
-@keyframes firstAnimation {
-  to {
-      stroke-dashoffset: 0;
-  }
+.login-form {
+  display: flex;
+  justify-content: right;
+  height: 100vh;
 }
 
+.login-form h1 {
+  font-size: clamp(2rem, 2vw, 3rem);
+  font-weight: 600;
+  padding-bottom: 1em;
+}
+
+.form-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+  width: 25vw;
+  height: 90%;
+  padding-right: 5em;
+}
+
+.login-form label {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 600;
+}
+
+.login-form input {
+  padding: 1em;
+  margin: 0.5em 0;
+  border: 1px solid var(--black);
+  border-radius: 5px;
+}
+
+.login-form button {
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 600;
+  transition: all 200ms ease;
+}
+
+.login-btn {
+  color: var(--white);
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+.register-btn {
+  background: none;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.login-logo {
+  position: absolute;
+  width: 30vw;
+  height: 100%;
+  padding-left: 15em;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  max-width: 100%;
+  max-height: 100%;
+  filter: grayscale(100%);
+  opacity: 0.2;
+}
+
+.background-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.feed {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1em;
+  height: 100vh;
+  width: 50%;
+  background-color: red;
+}
+
+.feed-heading {
+  font-size: clamp(2rem, 2vw, 3rem);
+  padding: 0.5em;
+}
+
+.user-feed-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  border: 1px solid var(--black);
+  border-radius: 1em;
+  height: 15vh;
+  overflow: hidden;
+}
+
+.user-feed-post-text {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 600;
+  height: 100%;
+  width: 100%;
+  resize: none;
+  background: none;
+  border: none;
+  outline: none;
+  padding-top: 0.2em;
+  padding-left: 1em;
+}
 
 /* Mobile */
 

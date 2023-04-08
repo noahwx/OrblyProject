@@ -1,13 +1,14 @@
 import './index.css';
-import Header from './components/Header';
 import Main from './components/Main';
+import Favicon from "react-favicon";
+import logo from './logo.svg';
 
-// Version 0.0.020
+// Version 0.3.000
 
 function App() {
   return (
     <>
-      <Header />
+      <Favicon url={logo}/>
       <Main />
       <footer>Orbly. © 2023</footer>
     </>
